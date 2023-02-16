@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #4452b8;
+}
+
+.loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95px;
+    height: 95px;
+    /* border: 2px solid red; */
+
+}
+.bar{
+    position: absolute;
+    top: 42px;
+    width: 95px;
+    height: 10px;
+    transform: rotate(90deg);
+    /* border: 2px solid green; */
+    animation: rotateBar 1s  infinite ease-in-out;
+}
+
+.bar:before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 10px;
+    background-color: #d1e2df;
+    border-radius: 10px;
+}
+.bar-1:before{
+    opacity: .6;
+}
+.bar-2:before{
+    opacity: .55;
+}
+.bar-3:before{
+    opacity: .5;
+}
+.bar-4:before{
+    opacity: .45;
+}
+
+.bar-5:before{
+    opacity: .4;
+}
+.bar-6:before{
+    opacity: .35;
+}
+.bar-7:before{
+    opacity: .3;
+}
+
+.bar-8:before{
+    opacity: .25;
+}
+
+.bar-9:before{
+    opacity: .2;
+}
+
+.bar-10:before{
+    opacity: .15;
+}
+
+
+.bar-1{
+     animation-delay: 05s;
+}
+
+.bar-2{
+    animation-delay: 10s;
+}
+.bar-3{
+    animation-delay: 15s;
+}
+.bar-4{
+    animation-delay: 20s;
+}
+.bar-5{
+    animation-delay: 25s;
+}
+.bar-6{
+   animation-delay: 30s;
+}
+.bar-7{
+    animation-delay: 35s;
+}
+.bar-8{
+    animation-delay: 40s;
+}
+.bar-9{
+   animation-delay: 45s;
+}
+.bar-10{
+    animation-delay: 50s;
+}
+
+@keyframes rotateBar {
+        0% {
+            transform: rotate(90deg);
+        }
+
+        60%{
+            transform: rotate(450deg);
+        }
+
+        100%{
+            transform: rotate(450deg);
+        }
+}
